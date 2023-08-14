@@ -1,0 +1,116 @@
+<html>
+  <head>
+    <link href="./css/style.css" rel="stylesheet" media="screen">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/boss1.js"></script>
+    <script src="./data/attacks.js"></script>
+  </head>
+
+  <body>
+    <input type="hidden" id="acerto" value="0" />
+    <input type="hidden" id="erros" value="0" />
+    <div id="danoPrn"></div>
+    <div id="dano"></div>
+
+    <div id="endFigth">
+      <h1><i>Mensagem</i></h4>
+    </div>
+    <div align="center">
+      <table>
+        <thead>
+          <tr>
+            <th><span class="textBoss">Baal - Lord da Destruição</span></th>
+          </tr>
+          <tr>
+            <td>
+              <div id="lifeEnemy"></div>
+            </td>
+          </tr>
+        </thead>
+		
+        <tfoot>
+          <tr>
+            <th><div id="lifePerson"></div></th>
+          </tr>
+          <tr>
+            <th><span id="pergunta" id-hint=""></span></th>
+          </tr>
+          <tr>
+            <td align="center">
+              <table id="attacks">
+                <tr>
+                  <th>
+                    <span id="attack1" class="attack" data-target="1"></span>
+                  </th>
+                  <th>
+                    <span class="attack"> | </span>
+                  </th>
+                  <th>
+                    <span id="attack2" class="attack" data-target="2"></span>
+                  </th>
+                  <th>
+                    <span class="attack"> | </span>
+                  </th>
+                  <th>
+                    <span id="attack3" class="attack" data-target="3"></span>
+                  </th>
+                  <th>
+                    <span class="attack"> | </span>
+                  </th>
+                  <th>
+                    <span id="attack4" class="attack" data-target="4"></span>
+                  </th>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </tfoot>
+		
+        <tbody>
+          <tr>
+            <td>
+              <div id="enemyBaal">
+                <img src="./img/boss/baal.jpg" id="imgEnemyBaal" />
+                 <div id="targetEnemy">
+                  <table>
+                    <tr>
+                      <td></td>
+                      <td><img src="./img/alvo.png" class="alvo" id="target1"></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td><img src="./img/alvo.png" class="alvo" id="target2"></td>
+                      <td></td>
+                      <td><img src="./img/alvo.png" class="alvo" id="target3"></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td><img src="./img/alvo.png" class="alvo" id="target4"></td>
+                      <td></td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <audio id="song" style="display:none;" controls>
+      <source src="./songs/bosses/baal.ogg" type="audio/ogg">
+    </audio>
+	
+    <audio id="attack" style="display:none;" controls>
+      <source src="./songs/attack.ogg" type="audio/ogg">
+    </audio>
+	
+    <audio id="pain" style="display:none;" controls>
+      <source src="./songs/pain.ogg" type="audio/ogg">
+    </audio>
+
+    <audio id="painEnemy" style="display:none;" controls>
+      <source src="./songs/painEnemy.ogg" type="audio/ogg">
+    </audio>	
+  </body>
+</html>

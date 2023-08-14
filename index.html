@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <link href="./css/style.css" rel="stylesheet" media="screen">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/index.js"></script>
+  </head>
+
+  <body>
+    <div id="conteiner">
+      <div id="apresentation">
+        <span id="title" class="textIntro">Ataque ao Santuário</span>
+        <br />
+        <span id="next" class="textIntro">Começar</span>
+      </div>
+
+      <div id="selectHero" align="center">
+        <table>
+          <tr>
+            <td colspan="10" align="center"><span class="textSelHero">Selecione o Herói</span></td>
+          </tr>
+          <tr>
+            <td><input type="image" src="./img/hero/arcanista.png" class="selHero" /></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><input type="image" src="./img/hero/barb.png"      class="selHero" /></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><input type="image" src="./img/hero/hunter.png"    class="selHero" /></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><input type="image" src="./img/hero/monge.png"     class="selHero" /></td>
+          </tr>
+          <tr>
+            <td align="center"><span class="textHero">Arcanista</span></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td align="center"><span class="textHero">Bárbaro</span></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td align="center"><span class="textHero">Devil Hunter</span></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td align="center"><span class="textHero">Monge</span></td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="loaderGame" style="display:none;">
+        <img src="./img/loader.gif" />
+      </div>
+    </div>
+
+    <audio id="song" style="display:none;" controls>
+      <source src="./songs/intro.ogg" type="audio/ogg">
+    </audio>
+  </body>
+</html>

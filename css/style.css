@@ -1,0 +1,179 @@
+body {
+  background:black;
+  color:white;
+}
+
+#conteiner {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.textIntro {
+  display:none;
+}
+
+.textIntro {
+  color:white;
+  font-style: oblique;
+  font-weight: bold;
+  font-family:"Sans-serif";
+  font-size: 50px;
+}
+
+.textHero {
+  color:white;
+  font-style: oblique;
+  font-weight: bold;
+  font-family:"Sans-serif";
+  font-size: 40px;
+}
+
+.textSelHero {
+  color:white;
+  font-style: oblique;
+  font-weight: bold;
+  font-family:"Sans-serif";
+  font-size: 50px;
+}
+
+.textBoss {
+  color:white;
+  font-style: oblique;
+  font-weight: bold;
+  font-family:"Sans-serif";
+  font-size: 25px;
+}
+
+#pergunta {
+  color:white;
+  font-style: oblique;
+  font-weight: bold;
+  font-family:"Sans-serif";
+  font-size: 25px;
+}
+
+#selectHero {
+  display:none;
+}
+
+.selHero {
+  height:400px;
+  width:100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.selHero:hover {
+  border:1px solid #FF0000;
+  border-radius: 10px;
+}
+
+#loaderGame {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+#lifePerson {
+  background: linear-gradient(to bottom, #fc7c72 0%,#8b0c03 50%,#6c0700 51%,#eb1a0b 100%);
+  border-radius: 10px; 
+  height:20px;
+  width:100%;
+}
+
+#lifeEnemy {
+  background: linear-gradient(to bottom, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%);
+  height:20px;
+  width:100%;
+  border-radius: 10px; 
+}
+
+#enemy {
+  background: url('../img/malthael.jpg') no-repeat center top fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#targetEnemy {
+  position: absolute;
+  z-index: 3;
+  top:20%;
+  left:43%;
+}
+
+#next {
+  cursor:pointer;
+}
+
+#imgBackEnemyBaal {
+  position: absolute;
+  height:70%;
+  width:80%;
+  z-index: 2;
+  top:5%;
+  left:10%;
+  opacity:0.1;
+}
+
+#imgAttackBaal {
+  display:none;
+  position: absolute;
+  height:80%;
+  width:89%;
+  z-index: 2;
+  top:5%;
+  left:5.5%;
+  opacity:0.5;
+}
+
+.alvo {
+  height:60px;
+  width:60px
+}
+
+.attack {
+  color:white;
+  font-weight: bold;
+  font-family:"Sans-serif";
+  font-size: 25px;
+  cursor:pointer;
+}
+
+#endFigth {
+  display:none;
+  position: absolute;
+  height:20%;
+  width:50%;
+  z-index: 6;
+  top:10%;
+  left:20%;
+  opacity:1;
+  color:white;
+  font-weight: bold;
+  font-family:"Sans-serif";
+  font-size: 60px;
+}
+
+#danoPrn {
+  display:none;
+  position: absolute;
+  left:10%;
+  z-index: 6;
+  height:90%;
+  width:80%;
+  opacity:0.3;
+  background:red;
+}
